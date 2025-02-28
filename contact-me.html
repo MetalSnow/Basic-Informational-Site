@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me | Basic Informational Site</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input,
+      textarea {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Me</h1>
+    <form action="/submit-form" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
